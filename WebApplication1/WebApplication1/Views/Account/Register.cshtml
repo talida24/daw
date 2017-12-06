@@ -1,0 +1,46 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="login">
+    <div class="col-md-4">
+        <section id="loginForm">
+            <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+                <h4>Create a new account.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ChildEmail"></label>
+                    <input asp-for="ChildEmail" class="form-control" />
+                    <span asp-validation-for="ChildEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ParentEmail"></label>
+                    <input asp-for="ParentEmail" class="form-control" />
+                    <span asp-validation-for="ParentEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-default">Register</button>
+            </form>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <div id="loginSanta">
+            <img src="~/images/santalogin.png" width="200%">
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
