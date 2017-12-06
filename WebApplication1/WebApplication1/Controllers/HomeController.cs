@@ -22,7 +22,14 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Gifts()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Item()
         {
             ViewData["Message"] = "Your contact page.";
 

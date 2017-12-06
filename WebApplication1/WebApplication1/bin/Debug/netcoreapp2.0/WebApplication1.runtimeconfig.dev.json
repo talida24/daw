@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Talida\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Talida\\.nuget\\packages",
+      "C:\\Users\\talida.rosioru\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\talida.rosioru\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }

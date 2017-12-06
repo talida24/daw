@@ -9,48 +9,60 @@
     ViewData["Title"] = "Login";
 }
 <div class="login">
-    <div class="col-md-4">
-        <section id="loginForm">
-            <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="ChildEmail"></label>
-                    <input asp-for="ChildEmail" class="form-control" />
-                    <span asp-validation-for="ChildEmail" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label asp-for="RememberMe">
-                            <input asp-for="RememberMe" />
-                            @Html.DisplayNameFor(m => m.RememberMe)
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-default">Log in</button>
-                </div>
-                <div class="form-group">
-                    <p>
-                        <a asp-action="ForgotPassword">Forgot your password?</a>
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
 
-    <div class="col-md-4">
-        <div id="loginSanta">
-            <img src="~/images/santalogin.png" width="200%">
-        </div>
-    </div>
+    <section class="container">
+        <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+            <h4>Use a local account to log in.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ChildEmail"></label>
+                <input asp-for="ChildEmail" class="form-control" />
+                <span asp-validation-for="ChildEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label asp-for="RememberMe">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(m => m.RememberMe)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Log in</button>
+            </div>
+            <div class="form-group">
+                <p>
+                    <a asp-action="ForgotPassword">Forgot your password?</a>
+                </p>
+            </div>
+        </form>
+    </section>
+
+    <div class="calltoaction">
+        <div class="lightoverlay">
+            <div class="container">
+                <div class="col-md-4">
+                    <img src="~/images/tree.gif" alt="">
+                </div><!--CALL-TO-ACTION IMAGE END-->
+                <div class="sectionhead content col-md-8">
+                    <h2>Best <span class="highlight">free landing page</span> template</h2>
+                    <p>
+                        SantaGo is another free Christmas sales and affiliate landing page template built and distributed by <a href="http://evenfly.com">EvenFly Team</a> as a small cristmas gift under Creative Commons 3.0 license. If you have any question, suggestion or need assistance, feel free to <a href="mailto:support@venfly.com">email us</a> anytime.
+
+                    </p>
+                    <a href="" class="btn btn-default">Download</a>
+                </div><!--CALL-TO-ACTION CONTENT END-->
+            </div><!--CALL-TO-ACTION CONTAINER END-->
+        </div><!--CALL-TO-ACTION OVERLAY END-->
+    </div><!--CALL-TO-ACTION END-->
 </div>
+
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
