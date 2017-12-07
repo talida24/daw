@@ -284,6 +284,117 @@ FOOTER SECTION
 footer {padding: 75px 0 30px 0;}
 .logo {margin-top: -20px;}
 
+/*--footer--*/
+.footer {
+    background: #f5f6f8;
+    -webkit-box-shadow: 0px 0px 5px 1px #C3C3C3;
+    -moz-box-shadow: 0px 0px 5px 1px #C3C3C3;
+    box-shadow: 0px 0px 5px 1px #C3C3C3;
+}
+
+.footer-grids h4 {
+    font-size: 2.8em;
+    font-weight: 800;
+}
+
+    .footer-grids h4 a {
+        color: rgba(255, 24, 0, 0.75);
+        text-decoration: none;
+    }
+
+        .footer-grids h4 a b {
+            color: #353F49;
+        }
+
+.footer-grids h3 {
+    font-size: 3em;
+    color: rgba(255, 24, 0, 0.75);
+    margin-bottom: 0.5em;
+}
+
+.footer-grids p {
+    font-size: 1em;
+    color: #32404b;
+    font-weight: 500;
+    margin-top: 1em;
+    line-height: 1.8em;
+}
+
+    .footer-grids p a {
+        color: #32404b;
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        transition: .5s all;
+    }
+
+        .footer-grids p a:hover {
+            color: rgba(255, 24, 0, 0.75);
+        }
+
+.footer-grids ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 30px 5px 0;
+}
+
+    .footer-grids ul li a {
+        font-size: 1em;
+        text-decoration: none;
+        line-height: 2em;
+        color: #32404b;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+
+        .footer-grids ul li a:hover {
+            color: rgba(255, 24, 0, 0.75);
+        }
+
+.footer input[type="text"] {
+    outline: none;
+    width: 75%;
+    color: #999;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: 3px solid #E0E0E0;
+    margin-top: 1em;
+}
+
+.footer input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.footer input::-moz-placeholder {
+    color: #999;
+}
+
+.footer input:-moz-placeholder {
+    color: #999;
+}
+
+.footer input:-ms-input-placeholder {
+    color: #999;
+}
+
+.footer input[type="submit"] {
+    outline: none;
+    border: 3px solid rgba(255, 24, 0, 0.75);
+    background: rgba(255, 24, 0, 0.75);
+    color: #fff;
+    font-size: 1.1em;
+    padding: 9px 12px;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -webkit-appearance: none;
+}
+
+    .footer input[type="submit"]:hover {
+        color: rgba(255, 24, 0, 0.75);
+        background: #fff;
+    }
+/*--//footer--*/
+
 .santacap {
     margin-top: -110px;
     margin-left: -105px;

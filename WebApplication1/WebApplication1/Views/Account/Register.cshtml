@@ -4,42 +4,58 @@
 }
 
 <div class="login">
-    <div class="col-md-4">
-        <section id="loginForm">
-            <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
-                <h4>Create a new account.</h4>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="ChildEmail"></label>
-                    <input asp-for="ChildEmail" class="form-control" />
-                    <span asp-validation-for="ChildEmail" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="ParentEmail"></label>
-                    <input asp-for="ParentEmail" class="form-control" />
-                    <span asp-validation-for="ParentEmail" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="ConfirmPassword"></label>
-                    <input asp-for="ConfirmPassword" class="form-control" />
-                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                </div>
-                <button type="submit" class="btn btn-default">Register</button>
-            </form>
-        </section>
-    </div>
-    <div class="col-md-4">
-        <div id="loginSanta">
-            <img src="~/images/santalogin.png" width="200%">
+
+    <section class="container">
+        <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+            <h4 style="color: #f53f2c">Create an account to let Santa knows who wrote the letter!</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ChildEmail"></label>
+                <input asp-for="ChildEmail" class="form-control" />
+                <span asp-validation-for="ChildEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParentEmail"></label>
+                <input asp-for="ParentEmail" class="form-control" />
+                <span asp-validation-for="ParentEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default">Register</button>
+        </form>
+    </section>
+
+
+    <div class="container">
+
+        <img style="width:100%; height:100%; margin-top: 50px;" src="~/images/santalogin.png" alt="">
+
+    </div><!--CALL-TO-ACTION CONTAINER END-->
+    <!--footer-->
+    <div class="footer" style="margin-top: 20px;">
+        <div class="container">
+            <footer class="container text-center">
+                <h2 class="logo">Santa<span class="highlight">Go</span></h2>
+                <img class="santacap" src="~/images/santa_cap.png" alt="">
+                <P>Another free Bootstrap Landing page temlate from <a href="http://evenfly.com">EvenFly</a> released under <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a> license.</P>
+                <hr>
+            </footer>
         </div>
     </div>
+    <!--//footer-->
+
 </div>
+
+
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
